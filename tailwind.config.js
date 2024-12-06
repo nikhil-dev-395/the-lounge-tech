@@ -26,6 +26,9 @@ module.exports = {
       fontFamily: {
         urbanist: ["Urbanist", "sans-serif"],
       },
+      typography: {
+        secondary: "#D8D8D8",
+      },
     },
   },
   plugins: [],
