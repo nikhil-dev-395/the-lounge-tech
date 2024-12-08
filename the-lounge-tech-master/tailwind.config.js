@@ -22,7 +22,9 @@ module.exports = {
         secondary: "#3A384F",
         primary: "#0B081E",
         accent: "#7344BE",
-        aboutCardHead: "#F6F6F6",
+        CardHead: "#F6F6F6",
+        projectBox: "#8E54E9",
+        projectLink: "#12111D",
       },
       boxShadow: {
         "white-glow-soft":

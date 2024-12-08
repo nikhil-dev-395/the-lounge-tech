@@ -20,7 +20,7 @@ const About = () => {
         we provide the best service for you
       </h1>
 
-      <p className="text-sm pt-16  text-slate-400 max-w-[231px] mx-auto text-center font-base">
+      <p className="text-[19px] pt-16  text-slate-400 max-w-[271px] mx-auto text-center font-base">
         we helping clients to create with our talented expert.
       </p>
 
@@ -46,7 +46,7 @@ const About = () => {
 
           {/* details */}
 
-          <div className="pt-10 text-aboutCardHead">
+          <div className="pt-10 text-CardHead">
             <h2 className="text-[19px] w-max capitalize">
               expertise in figma-to-webflow
             </h2>
@@ -56,11 +56,11 @@ const About = () => {
               eiusmod tempor incididunt ut labore et dolore magna.
             </p>
 
-            {/* read more button */}
+            {/* TODO :  read more button */}
 
             <Link
               href="/home"
-              className="text-accent  flex items-center gap-2 pt-4"
+              className="text-accent   flex items-center gap-2 pt-4"
             >
               read more{" "}
               <Image
@@ -73,6 +73,7 @@ const About = () => {
           </div>
         </div>
 
+        {/* from here is card */}
         <div
           id="card"
           className="px-10 mx-auto md:w-[324px] md:h-[308] py-4 border border-slate-600 rounded-xl my-4 bg-secondary/80 text-white backdrop-blur-sm relative shadow-white-glow-soft hover:shadow-white-glow-soft transition-shadow duration-300"
@@ -91,7 +92,7 @@ const About = () => {
 
           {/* details */}
 
-          <div className="pt-10 text-aboutCardHead">
+          <div className="pt-10 text-CardHead">
             <h2>expertise in figma-to-webflow</h2>
 
             <p className="pt-10 text-slate-400">
@@ -134,7 +135,7 @@ const About = () => {
 
           {/* details */}
 
-          <div className="pt-10 text-aboutCardHead">
+          <div className="pt-10 text-CardHead">
             <h2>expertise in figma-to-webflow</h2>
 
             <p className="pt-10 text-slate-400">
@@ -177,7 +178,7 @@ const About = () => {
 
           {/* details */}
 
-          <div className="pt-10 text-aboutCardHead">
+          <div className="pt-10 text-CardHead">
             <h2>expertise in figma-to-webflow</h2>
 
             <p className="pt-10 text-slate-400">
@@ -220,7 +221,7 @@ const About = () => {
 
           {/* details */}
 
-          <div className="pt-10 text-aboutCardHead">
+          <div className="pt-10 text-CardHead">
             <h2>expertise in figma-to-webflow</h2>
 
             <p className="pt-10 text-slate-400">
@@ -263,7 +264,7 @@ const About = () => {
 
           {/* details */}
 
-          <div className="pt-10 text-aboutCardHead">
+          <div className="pt-10 text-CardHead">
             <h2>expertise in figma-to-webflow</h2>
 
             <p className="pt-10 text-slate-400">
@@ -287,6 +288,8 @@ const About = () => {
             </Link>
           </div>
         </div>
+
+        {/* upto here is card */}
       </div>
     </section>
   );

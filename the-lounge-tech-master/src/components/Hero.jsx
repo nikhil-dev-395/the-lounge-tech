@@ -15,7 +15,7 @@ const Hero = () => {
           </span>{" "}
           website for your bussines
         </h1>
-        <p className=" text-secondary font-normal capitalize max-w-[50%] text-center mx-auto text-[15px] pt-10">
+        <p className=" text-slate-400 font-normal capitalize max-w-[50%] text-center mx-auto text-[17px] pt-10">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
