@@ -21,8 +21,13 @@ module.exports = {
         foreground: "var(--foreground)",
         secondary: "#3A384F",
         primary: "#0B081E",
+        accent: "#7344BE",
+        aboutCardHead: "#F6F6F6",
       },
-
+      boxShadow: {
+        "white-glow-soft":
+          "0 0 20px rgba(255, 255, 255, 0.2), 0 0 40px rgba(255, 255, 255, 0.1)",
+      },
       fontFamily: {
         urbanist: ["Urbanist", "sans-serif"],
       },

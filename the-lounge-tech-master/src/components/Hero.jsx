@@ -4,12 +4,12 @@ import Button from "./Button";
 const Hero = () => {
   return (
     <>
-      <section className="w-full h-auto  pt-7">
-        <h2 className="text-[23px] font-light text-blue-100 text-center font-urbanist py-10 uppercase ">
+      <section className="w-full h-auto  pt-7  ">
+        <h2 className="text-[23px] font-light text-blue-100 text-center font-urbanist py-10 uppercase">
           we're the experts
         </h2>
         <h1 className="text-[59px] max-w-[60%] text-center mx-auto capitalize font-bold">
-          we develope{" "}
+          we develop{" "}
           <span className="font-urbanist text-purple-700 capitalize">
             amazing
           </span>{" "}

@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 const Navbar = () => {
   return (
-    <header className="w-full pt-[74px] ">
-      <nav className="px-10 mx-auto max-w-4xl py-4 border border-slate-300 rounded-xl my-4 bg-secondary/80 text-white backdrop-blur-sm">
+    <header className="w-full pt-[50px] ">
+      <nav className=" px-10 mx-auto max-w-4xl py-4 border border-slate-300 rounded-xl my-4 bg-secondary/80 text-white backdrop-blur-sm">
         <ul className="flex items-center justify-center gap-10">
           {/* logo */}
           <li className="flex">
