@@ -25,6 +25,7 @@ module.exports = {
         CardHead: "#F6F6F6",
         projectBox: "#8E54E9",
         projectLink: "#12111D",
+        footerBg: "#0B081E",
       },
       boxShadow: {
         "white-glow-soft":
