@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="w-full border-t-2 border-slate-200 bg-footerBg text-slate-300">
+    <footer className="w-full  max-w-[95%] mx-auto border-t-2 border-slate-200 bg-footerBg text-slate-300">
       {/* Main Content */}
       <div className="pt-16 pb-10">
         <ul className="max-w-[90%] mx-auto grid grid-cols-[repeat(auto-fit,_minmax(240px,_1fr))] gap-12">
@@ -22,18 +22,21 @@ const Footer = () => {
 
           {/* Column 2: Office Information */}
           <li>
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col ">
               <h3 className="text-2xl font-semibold capitalize text-white">
                 Our Office
               </h3>
-              <p className="text-[17px] leading-relaxed w-1/2">
+              <h4 className="text-xl font-semibold capitalize text-white pt-5">
+                LoungeTech
+              </h4>
+              <p className="text-[17px] leading-relaxed w-[67%] pt-1">
                 Sanguin Street No. 40, Sample, Region State 12121, Country
               </p>
             </div>
           </li>
 
           {/* Column 3: Subscription Form */}
-          <li className="">
+          <li className="md:ml-[-100px]">
             <div className="flex flex-col gap-6">
               <h3 className="text-2xl font-semibold capitalize text-white">
                 Subscribe Now!
@@ -44,9 +47,9 @@ const Footer = () => {
                   placeholder="Enter your email now!"
                   className="flex-1 py-3 px-4 rounded-lg bg-slate-800 border border-slate-600 focus:border-blue-500 focus:outline-none text-slate-300"
                 />
-                <Button name="subscribe"  />
+                <Button name="subscribe" />
               </div>
-              <p className="text-[17px] leading-relaxed">
+              <p className="text-[17px] leading-relaxed text-slate-300">
                 By subscribing you agree to with our Privacy Policy and provide
                 consent to receive updates from our company.{" "}
               </p>
@@ -62,7 +65,7 @@ const Footer = () => {
             &copy; 2023 <span className="font-semibold">LOUNGETECH</span>. All
             Rights Reserved.
           </p>
-          <ul className="flex gap-8">
+          <ul className="flex gap-24">
             <li className="hover:text-blue-500 transition-colors cursor-pointer">
               <Link href=" Privacy Policy"> Privacy Policy</Link>
             </li>

@@ -1,9 +1,56 @@
 import Button from "@/components/Button";
+import ProjectCard from "@/components/ProjectCard";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const Services = () => {
+  const projectCardInfo = [
+    {
+      id: 1,
+      ProjectName: "agency website design",
+      ProjectLink: "https://github.com/project1",
+      ProjectDetails:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    },
+    {
+      id: 2,
+      ProjectName: "Mobile App Design",
+      ProjectLink: "https://github.com/project2",
+      ProjectDetails:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    },
+    {
+      id: 3,
+      ProjectName: "E-Commerce Solution",
+      ProjectLink: "https://github.com/project3",
+      ProjectDetails:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    },
+    {
+      id: 4,
+      ProjectName: "Portfolio Website",
+      ProjectLink: "https://github.com/project4",
+      ProjectDetails:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    },
+    {
+      id: 5,
+      ProjectName: "Task Management Tool",
+      ProjectLink: "https://github.com/project5",
+      ProjectDetails:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    },
+
+    {
+      id: 6,
+      ProjectName: "Task Management Tool",
+      ProjectLink: "https://github.com/project5",
+      ProjectDetails:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    },
+  ];
+
   return (
     <>
       <section className="w-auto mx-auto h-auto  pt-20 ">
@@ -29,193 +76,19 @@ const Services = () => {
           .projectCard  - is special class for projects
 
           */}
-          <div className=" projectCard px-10 mx-auto md:w-[324px] md:h-[308px] py-4 border border-slate-600 rounded-xl my-4 bg-projectBox text-white">
-            {/* details */}
-            <div className="pt-10 text-CardHead">
-              <h2 className="text-[22px] text-center capitalize">
-                agency website design
-              </h2>
-
-              {/* here don't exceed above 14 words */}
-              <p className="pt-10 text-center text-slate-300 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt.{" "}
-              </p>
-
-              {/* Read More Button */}
-              <div className=" mx-auto flex justify-center items-center w-auto  pt-10">
-                <Link
-                  href="/"
-                  aria-label="Read more about agency website design"
-                  className="inline-block bg-projectLink py-4 px-4 rounded-full "
-                >
-                  <Image
-                    src="/Icons/x-rightArrow.svg"
-                    width={13}
-                    height={13}
-                    alt="Navigate to project details"
-                  />
-                </Link>
-              </div>
-            </div>
-          </div>
 
           {/* from here projects */}
 
-          <div className=" projectCard px-10 mx-auto md:w-[324px] md:h-[308px] py-4 border border-slate-600 rounded-xl my-4 bg-projectBox text-white">
-            {/* details */}
-            <div className="pt-10 text-CardHead">
-              <h2 className="text-[22px] text-center capitalize">
-                agency website design
-              </h2>
-
-              {/* here don't exceed above 14 words */}
-              <p className="pt-10 text-center text-slate-300 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt.{" "}
-              </p>
-
-              {/* Read More Button */}
-              <div className=" mx-auto flex justify-center items-center w-auto  pt-10">
-                <Link
-                  href="/"
-                  aria-label="Read more about agency website design"
-                  className="inline-block bg-projectLink py-4 px-4 rounded-full "
-                >
-                  <Image
-                    src="/Icons/RightArrowPurple.svg"
-                    width={13}
-                    height={13}
-                    alt="Navigate to project details"
-                  />
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className=" projectCard px-10 mx-auto md:w-[324px] md:h-[308px] py-4 border border-slate-600 rounded-xl my-4 bg-projectBox text-white">
-            {/* details */}
-            <div className="pt-10 text-CardHead">
-              <h2 className="text-[22px] text-center capitalize">
-                agency website design
-              </h2>
-
-              {/* here don't exceed above 14 words */}
-              <p className="pt-10 text-center text-slate-300 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt.{" "}
-              </p>
-
-              {/* Read More Button */}
-              <div className=" mx-auto flex justify-center items-center w-auto  pt-10">
-                <Link
-                  href="/"
-                  aria-label="Read more about agency website design"
-                  className="inline-block bg-projectLink py-4 px-4 rounded-full "
-                >
-                  <Image
-                    src="/Icons/RightArrowPurple.svg"
-                    width={13}
-                    height={13}
-                    alt="Navigate to project details"
-                  />
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className=" projectCard px-10 mx-auto md:w-[324px] md:h-[308px] py-4 border border-slate-600 rounded-xl my-4 bg-projectBox text-white">
-            {/* details */}
-            <div className="pt-10 text-CardHead">
-              <h2 className="text-[22px] text-center capitalize">
-                agency website design
-              </h2>
-
-              {/* here don't exceed above 14 words */}
-              <p className="pt-10 text-center text-slate-300 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt.{" "}
-              </p>
-
-              {/* Read More Button */}
-              <div className=" mx-auto flex justify-center items-center w-auto  pt-10">
-                <Link
-                  href="/"
-                  aria-label="Read more about agency website design"
-                  className="inline-block bg-projectLink py-4 px-4 rounded-full "
-                >
-                  <Image
-                    src="/Icons/RightArrowPurple.svg"
-                    width={13}
-                    height={13}
-                    alt="Navigate to project details"
-                  />
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className=" projectCard px-10 mx-auto md:w-[324px] md:h-[308px] py-4 border border-slate-600 rounded-xl my-4 bg-projectBox text-white">
-            {/* details */}
-            <div className="pt-10 text-CardHead">
-              <h2 className="text-[22px] text-center capitalize">
-                agency website design
-              </h2>
-
-              {/* here don't exceed above 14 words */}
-              <p className="pt-10 text-center text-slate-300 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt.{" "}
-              </p>
-
-              {/* Read More Button */}
-              <div className=" mx-auto flex justify-center items-center w-auto  pt-10">
-                <Link
-                  href="/"
-                  aria-label="Read more about agency website design"
-                  className="inline-block bg-projectLink py-4 px-4 rounded-full "
-                >
-                  <Image
-                    src="/Icons/RightArrowPurple.svg"
-                    width={13}
-                    height={13}
-                    alt="Navigate to project details"
-                  />
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className=" projectCard px-10 mx-auto md:w-[324px] md:h-[308px] py-4 border border-slate-600 rounded-xl my-4 bg-projectBox text-white">
-            {/* details */}
-            <div className="pt-10 text-CardHead">
-              <h2 className="text-[22px] text-center capitalize">
-                agency website design
-              </h2>
-
-              {/* here don't exceed above 14 words */}
-              <p className="pt-10 text-center text-slate-300 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt.{" "}
-              </p>
-
-              {/* Read More Button */}
-              <div className=" mx-auto flex justify-center items-center w-auto  pt-10">
-                <Link
-                  href="/"
-                  aria-label="Read more about agency website design"
-                  className="inline-block bg-projectLink py-4 px-4 rounded-full "
-                >
-                  <Image
-                    src="/Icons/RightArrowPurple.svg"
-                    width={13}
-                    height={13}
-                    alt="Navigate to project details"
-                  />
-                </Link>
-              </div>
-            </div>
-          </div>
+          {projectCardInfo.map(
+            ({ id, ProjectDetails, ProjectLink, ProjectName }) => (
+              <ProjectCard
+                key={id}
+                ProjectName={ProjectName}
+                ProjectLink={ProjectLink}
+                ProjectDetails={ProjectDetails}
+              />
+            )
+          )}
 
           {/* projects end here */}
         </div>

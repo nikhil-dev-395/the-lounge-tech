@@ -2,17 +2,40 @@ import Carousel from "@/components/carousel";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import AboutCard from "@/components/AboutCard";
 const About = () => {
+  const aboutCardInfo = [
+    {
+      id: 1,
+      cardName: "expertise in figma-to-webflow",
+      cardDetails:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+      cardIcon: "/Icons/trophy.svg",
+      cardLink: "/home",
+    },
+    ,
+    {
+      id: 2,
+      cardName: "on-page SEO excellence",
+      cardDetails:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+      cardIcon: "/Icons/trophy.svg",
+      cardLink: "/home",
+    },
+    {
+      id: 3,
+      cardName: "dedicated project manager",
+      cardDetails:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+      cardIcon: "/Icons/trophy.svg",
+      cardLink: "/home",
+    },
+  ];
+
   return (
     <section className="w-full h-auto pt-20">
       <Carousel />
-      <p
-        className="text-center font-urbanist text-[23px] font-semibold leading-[118%] tracking-[3.45px] uppercase pt-[80px]"
-        style={{
-          "--tw-text-opacity": "1",
-          color: "var(--ACCENT-COLOR-01-A200, #DDCCF8)",
-        }}
-      >
+      <p className="text-center font-urbanist text-[23px] font-semibold leading-[118%] tracking-[3.45px] uppercase pt-[80px] text-accent2">
         what we do
       </p>
 
@@ -28,268 +51,17 @@ const About = () => {
         id="boxes"
         className="pt-32 flex flex-wrap max-w-[90%] gap-x-14 gap-y-10 mx-auto"
       >
-        <div
-          id="card"
-          className="px-10 mx-auto md:w-[324px] md:h-[308] py-4 border border-slate-600 rounded-xl my-4 bg-secondary/80 text-white backdrop-blur-sm relative shadow-white-glow-soft hover:shadow-white-glow-soft transition-shadow duration-300"
-        >
-          <div
-            id="image-box"
-            className="absolute top-[-30px] left-4 py-2 px-3 bg-secondary/80 text-white backdrop-blur-sm rounded-xl "
-          >
-            <Image
-              src="/Icons/trophy.svg"
-              width={50}
-              height={44}
-              alt="trophy"
+        {aboutCardInfo.map(
+          ({ id, cardName, cardDetails, cardIcon, cardLink }) => (
+            <AboutCard
+              key={id}
+              cardName={cardName}
+              cardDetails={cardDetails}
+              cardIcon={cardIcon}
+              cardLink={cardLink}
             />
-          </div>
-
-          {/* details */}
-
-          <div className="pt-10 text-CardHead">
-            <h2 className="text-[19px] w-max capitalize">
-              expertise in figma-to-webflow
-            </h2>
-
-            <p className="pt-10 text-slate-400">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna.
-            </p>
-
-            {/* TODO :  read more button */}
-
-            <Link
-              href="/home"
-              className="text-accent   flex items-center gap-2 pt-4"
-            >
-              read more{" "}
-              <Image
-                src="/Icons/RightArrowPurple.svg"
-                width={13}
-                height={13}
-                alt="RightArrow"
-              />
-            </Link>
-          </div>
-        </div>
-
-        {/* from here is card */}
-        <div
-          id="card"
-          className="px-10 mx-auto md:w-[324px] md:h-[308] py-4 border border-slate-600 rounded-xl my-4 bg-secondary/80 text-white backdrop-blur-sm relative shadow-white-glow-soft hover:shadow-white-glow-soft transition-shadow duration-300"
-        >
-          <div
-            id="image-box"
-            className="absolute top-[-30px] left-4 py-2 px-3 bg-secondary/80 text-white backdrop-blur-sm rounded-xl "
-          >
-            <Image
-              src="/Icons/trophy.svg"
-              width={50}
-              height={44}
-              alt="trophy"
-            />
-          </div>
-
-          {/* details */}
-
-          <div className="pt-10 text-CardHead">
-            <h2>expertise in figma-to-webflow</h2>
-
-            <p className="pt-10 text-slate-400">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna.
-            </p>
-
-            {/* read more button */}
-
-            <Link
-              href="/home"
-              className="text-accent flex items-center gap-2 pt-4"
-            >
-              read more{" "}
-              <Image
-                src="/Icons/RightArrowPurple.svg"
-                width={13}
-                height={13}
-                alt="RightArrow"
-              />
-            </Link>
-          </div>
-        </div>
-
-        <div
-          id="card"
-          className="px-10 mx-auto md:w-[324px] md:h-[308] py-4 border border-slate-600 rounded-xl my-4 bg-secondary/80 text-white backdrop-blur-sm relative shadow-white-glow-soft hover:shadow-white-glow-soft transition-shadow duration-300"
-        >
-          <div
-            id="image-box"
-            className="absolute top-[-30px] left-4 py-2 px-3 bg-secondary/80 text-white backdrop-blur-sm rounded-xl "
-          >
-            <Image
-              src="/Icons/trophy.svg"
-              width={50}
-              height={44}
-              alt="trophy"
-            />
-          </div>
-
-          {/* details */}
-
-          <div className="pt-10 text-CardHead">
-            <h2>expertise in figma-to-webflow</h2>
-
-            <p className="pt-10 text-slate-400">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna.
-            </p>
-
-            {/* read more button */}
-
-            <Link
-              href="/home"
-              className="text-accent flex items-center gap-2 pt-4"
-            >
-              read more{" "}
-              <Image
-                src="/Icons/RightArrowPurple.svg"
-                width={13}
-                height={13}
-                alt="RightArrow"
-              />
-            </Link>
-          </div>
-        </div>
-
-        <div
-          id="card"
-          className="px-10 mx-auto md:w-[324px] md:h-[308] py-4 border border-slate-600 rounded-xl my-4 bg-secondary/80 text-white backdrop-blur-sm relative shadow-white-glow-soft hover:shadow-white-glow-soft transition-shadow duration-300"
-        >
-          <div
-            id="image-box"
-            className="absolute top-[-30px] left-4 py-2 px-3 bg-secondary/80 text-white backdrop-blur-sm rounded-xl "
-          >
-            <Image
-              src="/Icons/trophy.svg"
-              width={50}
-              height={44}
-              alt="trophy"
-            />
-          </div>
-
-          {/* details */}
-
-          <div className="pt-10 text-CardHead">
-            <h2>expertise in figma-to-webflow</h2>
-
-            <p className="pt-10 text-slate-400">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna.
-            </p>
-
-            {/* read more button */}
-
-            <Link
-              href="/home"
-              className="text-accent flex items-center gap-2 pt-4"
-            >
-              read more{" "}
-              <Image
-                src="/Icons/RightArrowPurple.svg"
-                width={13}
-                height={13}
-                alt="RightArrow"
-              />
-            </Link>
-          </div>
-        </div>
-
-        <div
-          id="card"
-          className="px-10 mx-auto md:w-[324px] md:h-[308] py-4 border border-slate-600 rounded-xl my-4 bg-secondary/80 text-white backdrop-blur-sm relative shadow-white-glow-soft hover:shadow-white-glow-soft transition-shadow duration-300"
-        >
-          <div
-            id="image-box"
-            className="absolute top-[-30px] left-4 py-2 px-3 bg-secondary/80 text-white backdrop-blur-sm rounded-xl "
-          >
-            <Image
-              src="/Icons/trophy.svg"
-              width={50}
-              height={44}
-              alt="trophy"
-            />
-          </div>
-
-          {/* details */}
-
-          <div className="pt-10 text-CardHead">
-            <h2>expertise in figma-to-webflow</h2>
-
-            <p className="pt-10 text-slate-400">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna.
-            </p>
-
-            {/* read more button */}
-
-            <Link
-              href="/home"
-              className="text-accent flex items-center gap-2 pt-4"
-            >
-              read more{" "}
-              <Image
-                src="/Icons/RightArrowPurple.svg"
-                width={13}
-                height={13}
-                alt="RightArrow"
-              />
-            </Link>
-          </div>
-        </div>
-
-        <div
-          id="card"
-          className="px-10 mx-auto md:w-[324px] md:h-[308] py-4 border border-slate-600 rounded-xl my-4 bg-secondary/80 text-white backdrop-blur-sm relative shadow-white-glow-soft hover:shadow-white-glow-soft transition-shadow duration-300"
-        >
-          <div
-            id="image-box"
-            className="absolute top-[-30px] left-4 py-2 px-3 bg-secondary/80 text-white backdrop-blur-sm rounded-xl "
-          >
-            <Image
-              src="/Icons/trophy.svg"
-              width={50}
-              height={44}
-              alt="trophy"
-            />
-          </div>
-
-          {/* details */}
-
-          <div className="pt-10 text-CardHead">
-            <h2>expertise in figma-to-webflow</h2>
-
-            <p className="pt-10 text-slate-400">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna.
-            </p>
-
-            {/* read more button */}
-
-            <Link
-              href="/home"
-              className="text-accent flex items-center gap-2 pt-4"
-            >
-              read more{" "}
-              <Image
-                src="/Icons/RightArrowPurple.svg"
-                width={13}
-                height={13}
-                alt="RightArrow"
-              />
-            </Link>
-          </div>
-        </div>
-
-        {/* upto here is card */}
+          )
+        )}
       </div>
     </section>
   );

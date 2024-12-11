@@ -22,10 +22,12 @@ module.exports = {
         secondary: "#3A384F",
         primary: "#0B081E",
         accent: "#7344BE",
-        CardHead: "#F6F6F6",
+        Headings: "#F6F6F6",
         projectBox: "#8E54E9",
         projectLink: "#12111D",
         footerBg: "#0B081E",
+        testimonialsHead: "#DDCCF8",
+        accent2: "var(--ACCENT-COLOR-01-A200, #DDCCF8)",
       },
       boxShadow: {
         "white-glow-soft":

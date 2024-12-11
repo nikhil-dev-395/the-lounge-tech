@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -12,7 +13,13 @@ const Button = (props) => {
     >
       <div className="flex gap-2 items-center">
         <span className=""> {props.name || "get in touch"} </span>{" "}
-        <img src="/Icons/rightArrow.svg" className="" alt="rightArrow" />
+        <Image
+          src="/Icons/rightArrow.svg"
+          width={10}
+          height={14}
+          className=""
+          alt="rightArrow"
+        />
       </div>
     </Link>
   );

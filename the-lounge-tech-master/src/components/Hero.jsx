@@ -6,7 +6,7 @@ const Hero = () => {
     <>
       <section className="w-full h-auto  pt-7  ">
         <h2 className="text-[23px] font-light text-blue-100 text-center font-urbanist py-10 uppercase">
-          we're the experts
+          we&apos;re the experts
         </h2>
         <h1 className="text-[59px] max-w-[60%] text-center mx-auto capitalize font-bold">
           we develop{" "}
