@@ -65,7 +65,7 @@ const Footer = () => {
             &copy; 2023 <span className="font-semibold">LOUNGETECH</span>. All
             Rights Reserved.
           </p>
-          <ul className="flex gap-24">
+          <ul className="flex md:gap-24 gap-4 mt-3 md:mt-0  text-xs md:text-sm ">
             <li className="hover:text-blue-500 transition-colors cursor-pointer">
               <Link href=" Privacy Policy"> Privacy Policy</Link>
             </li>
