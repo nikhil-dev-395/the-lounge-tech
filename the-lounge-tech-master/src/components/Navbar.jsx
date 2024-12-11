@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Button from "./Button";
 const Navbar = () => {
   return (
     <header className="w-full pt-[50px] ">
@@ -15,15 +16,7 @@ const Navbar = () => {
           <li>pages</li>
           <li>contact</li>
           <li>
-            <button className="bg-gradient-g1 shadow-custom rounded-custom px-3 py-2 flex items-center gap-3">
-              lets talk
-              <Image
-                src="/Icons/RightArrow.svg"
-                alt="RightArrow"
-                width={10}
-                height={10}
-              />
-            </button>
+            <Button name="lets talking" ImageSrc="/Icons/rightArrow.svg" />
           </li>
         </ul>
       </nav>

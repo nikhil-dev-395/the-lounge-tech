@@ -14,7 +14,7 @@ const Button = (props) => {
       <div className="flex gap-2 items-center">
         <span className=""> {props.name || "get in touch"} </span>{" "}
         <Image
-          src="/Icons/rightArrow.svg"
+          src={props.ImageSrc || "/Icons/rightArrow.svg"}
           width={10}
           height={14}
           className=""
