@@ -3,7 +3,7 @@ import React from "react";
 
 const Carousel = () => {
   return (
-    <section >
+    <section>
       <hr />
       <div className="px-10 mx-auto  py-4   bg-secondary/80 text-white backdrop-blur-sm">
         <ul className="flex items-center justify-center gap-32 ">
@@ -43,8 +43,6 @@ const Carousel = () => {
       <hr />
 
       {/* main code */}
-
-
     </section>
   );
 };

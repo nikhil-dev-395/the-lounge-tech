@@ -7,6 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
+      animation: {
+        marquee: "marquee 20s linear infinite",
+      },
       backgroundImage: {
         "gradient-g1": "linear-gradient(94deg, #8E54E9 11.57%, #4776E6 99.84%)",
       },

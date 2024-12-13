@@ -1,5 +1,9 @@
 import localFont from "next/font/local";
+// import "swiper/swiper-bundle.min.css"; // Global Swiper styles
 import "./globals.css";
+// pages/_app.js
+// import '../styles/globals.css'; // Your global styles
+
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
@@ -23,7 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-primary cursor-default text-white `}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-primary cursor-default text-white w-full h-full`}
       >
         <Navbar />
 

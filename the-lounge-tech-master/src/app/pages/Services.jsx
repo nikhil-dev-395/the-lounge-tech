@@ -57,6 +57,7 @@ const Services = () => {
         <h1 className="text-xl font-thin uppercase  font-urbanist pl-32 ">
           our projects
         </h1>
+        
         <div className=" pt-8 w-[80%] mx-auto flex items-center justify-between">
           <p className="text-[40px] font-semibold capitalize   ">
             the work we have done
