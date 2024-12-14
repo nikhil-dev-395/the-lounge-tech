@@ -5,10 +5,10 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="w-full  max-w-[95%] mx-auto border-t-2 border-slate-200 bg-footerBg text-slate-300">
+    <footer className="w-full max-w-[95%] mx-auto border-t-2 border-slate-200 bg-footerBg text-slate-300">
       {/* Main Content */}
       <div className="pt-16 pb-10">
-        <ul className="max-w-[90%] mx-auto grid grid-cols-[repeat(auto-fit,_minmax(240px,_1fr))] gap-12">
+        <ul className="max-w-[90%] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
           {/* Column 1: Logo & Description */}
           <li>
             <div className="flex flex-col gap-4">
@@ -22,7 +22,7 @@ const Footer = () => {
 
           {/* Column 2: Office Information */}
           <li>
-            <div className="flex flex-col ">
+            <div className="flex flex-col">
               <h3 className="text-2xl font-semibold capitalize text-white">
                 Our Office
               </h3>
@@ -36,7 +36,7 @@ const Footer = () => {
           </li>
 
           {/* Column 3: Subscription Form */}
-          <li className="md:ml-[-100px]">
+          <li>
             <div className="flex flex-col gap-6">
               <h3 className="text-2xl font-semibold capitalize text-white">
                 Subscribe Now!
@@ -50,8 +50,8 @@ const Footer = () => {
                 <Button name="subscribe" />
               </div>
               <p className="text-[17px] leading-relaxed text-slate-300">
-                By subscribing you agree to with our Privacy Policy and provide
-                consent to receive updates from our company.{" "}
+                By subscribing, you agree to our Privacy Policy and consent to
+                receive updates from our company.
               </p>
             </div>
           </li>
@@ -59,21 +59,21 @@ const Footer = () => {
       </div>
 
       {/* Footer Bottom */}
-      <div className="border-t-2 border-slate-700 py-6 pb-16 pt-10 max-w-90%">
-        <div className="max-w-[90%] mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-4">
-          <p className="text-sm md:text-base">
+      <div className="border-t-2 border-slate-700 py-6 max-w-[90%] mx-auto">
+        <div className="flex flex-col sm:flex-row justify-between items-center text-center sm:text-left gap-4">
+          <p className="text-sm sm:text-base">
             &copy; 2023 <span className="font-semibold">LOUNGETECH</span>. All
             Rights Reserved.
           </p>
-          <ul className="flex md:gap-24 gap-4 mt-3 md:mt-0  text-xs md:text-sm ">
+          <ul className="flex gap-4 mt-3 sm:mt-0 text-xs sm:text-sm">
             <li className="hover:text-blue-500 transition-colors cursor-pointer">
-              <Link href=" Privacy Policy"> Privacy Policy</Link>
+              <Link href="/privacy-policy">Privacy Policy</Link>
             </li>
             <li className="hover:text-blue-500 transition-colors cursor-pointer">
-              <Link href="Terms of Service">Terms of Service</Link>
+              <Link href="/terms-of-service">Terms of Service</Link>
             </li>
             <li className="hover:text-blue-500 transition-colors cursor-pointer">
-              <Link href="Cookie Settings">Cookie Settings</Link>{" "}
+              <Link href="/cookie-settings">Cookie Settings</Link>
             </li>
           </ul>
         </div>

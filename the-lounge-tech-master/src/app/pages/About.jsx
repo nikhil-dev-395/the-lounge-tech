@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import AboutCard from "@/components/AboutCard";
-// import { sources } from "next/dist/compiled/webpack/webpack";
+
 const About = () => {
   const aboutCardInfo = [
     {
@@ -14,7 +14,6 @@ const About = () => {
       cardIcon: "/Icons/trophy.svg",
       cardLink: "/home",
     },
-    ,
     {
       id: 2,
       cardName: "on-page SEO excellence",
@@ -40,24 +39,24 @@ const About = () => {
   ];
 
   return (
-    <section className="w-full h-auto pt-20">
+    <section className="w-full h-auto pt-20 ">
       <Carousel />
 
       <p className="text-center font-urbanist text-[23px] font-semibold leading-[118%] tracking-[3.45px] uppercase pt-[80px] text-accent2">
         what we do
       </p>
 
-      <h1 className="text-6xl text-center font-semibold pt-10 capitalize">
+      <h1 className="text-4xl sm:text-5xl md:text-6xl text-center font-semibold pt-10 capitalize">
         we provide the best service for you
       </h1>
 
-      <p className="text-[19px] pt-16  text-slate-400 max-w-[271px] mx-auto text-center font-base">
-        we helping clients to create with our talented expert.
+      <p className="text-[17px] sm:text-[19px] pt-8 sm:pt-16 text-slate-400 max-w-[90%] md:max-w-[600px] mx-auto text-center font-base">
+        We help clients create with our talented experts.
       </p>
 
       <div
         id="boxes"
-        className="pt-32 flex flex-wrap max-w-[90%] gap-x-14 gap-y-10 mx-auto"
+        className="pt-16 sm:pt-32 flex flex-wrap max-w-full md:max-w-[90%] gap-6 sm:gap-8 lg:gap-10 mx-auto justify-center px-4"
       >
         {aboutCardInfo.map(
           ({ id, cardName, cardDetails, cardIcon, cardLink }) => (

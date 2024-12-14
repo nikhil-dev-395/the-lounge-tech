@@ -7,7 +7,7 @@ const AboutCard = ({ cardName, cardIcon, cardDetails, cardLink }) => {
     <>
       <div
         id="card"
-        className="px-10 mx-auto md:w-[324px] md:h-[308px] py-4 border border-slate-600 rounded-xl my-4 bg-secondary/80 text-white backdrop-blur-sm relative shadow-white-glow-soft hover:shadow-white-glow-soft transition-all duration-300 hover:cursor-default hover:-mt-11 ease-in-out"
+        className="px-10 mx-auto md:w-[324px] md:h-[308px] py-4 border border-slate-600 rounded-xl my-4 bg-secondary/80 text-white backdrop-blur-sm relative shadow-white-glow-soft hover:shadow-white-glow-soft transition-all duration-300 hover:cursor-default hover:md:-mt-11 ease-in-out"
       >
         <div
           id="image-box"
