@@ -2,10 +2,17 @@ import Image from "next/image";
 import React from "react";
 import Button from "./Button";
 import Link from "next/link";
+import { Spotlight } from "./ui/Spotlight";
+import { cn } from "@/lib/utils";
 
 const Footer = () => {
   return (
     <footer className="w-full max-w-[95%] mx-auto border-t-2 border-slate-200 bg-footerBg text-slate-300">
+      <Spotlight
+        className={cn("-top-40", "left-0", "md:left-60", "md:-top-20")}
+        fill="white"
+      />
+
       {/* Main Content */}
       <div className="pt-16 pb-10">
         <ul className="max-w-[90%] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">

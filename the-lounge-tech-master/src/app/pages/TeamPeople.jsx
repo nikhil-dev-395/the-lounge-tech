@@ -7,16 +7,6 @@ const TeamPeople = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const teamMembers = [
     {
-      name: "Josh Mullins",
-      position: "Full Stack Developer",
-      image: "/image1.jpg", // Update with actual path
-    },
-    {
-      name: "Alice Cooper",
-      position: "Frontend Developer",
-      image: "/img7.jpg", // Update with actual path
-    },
-    {
       name: "Sarah Lee",
       position: "UI/UX Designer",
       image: "/image.jpg", // Update with actual path
@@ -53,7 +43,7 @@ const TeamPeople = () => {
           Meet Our People
         </p>
         <div className="btn flex gap-10">
-          <button onClick={handlePrev}>
+          <button onClick={handlePrev} className="outline-none">
             <Image
               src="/Icons/x-leftArrow.svg"
               width={40}
@@ -62,7 +52,7 @@ const TeamPeople = () => {
               className="inline-block w-auto h-auto rounded-full py-2 px-2 border-2 border-accent"
             />
           </button>
-          <button onClick={handleNext}>
+          <button onClick={handleNext} className="outline-none">
             <Image
               src="/Icons/x-rightArrow.svg"
               width={40}
@@ -93,7 +83,7 @@ const TeamPeople = () => {
                 <div className="w-[310px]">
                   {/* Display image with alternating height and animation */}
                   <motion.div
-                    whileHover={{ scale: 1.1 }} // Scale up on hover
+                    whileHover={{ scale: 1.04 }} // Scale up on hover
                     initial={{ opacity: 0.8 }} // Start with slight opacity
                     animate={{ opacity: 1 }} // Animate to full opacity
                     transition={{ duration: 0.3 }}

@@ -2,13 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* Hide scrollbar but keep scrolling functionality */
 #team-member::-webkit-scrollbar {
   display: none;
 }
 
 #team-member {
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
-  scrollbar-width: none;      /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+@layer utilities {
+  .animate-scroll {
+    animation: scroll 20s linear infinite;
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }

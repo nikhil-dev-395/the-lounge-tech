@@ -1,5 +1,7 @@
 import Button from "@/components/Button";
 import ProjectCard from "@/components/ProjectCard";
+import { Spotlight } from "@/components/ui/Spotlight";
+import { cn } from "@/lib/utils";
 import React from "react";
 
 const Services = () => {

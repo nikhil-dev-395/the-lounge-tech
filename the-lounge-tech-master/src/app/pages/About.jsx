@@ -1,8 +1,7 @@
 import Carousel from "@/components/carousel.jsx";
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
 import AboutCard from "@/components/AboutCard";
+import StarIcon from "@/components/StarIcon";
 
 const About = () => {
   const aboutCardInfo = [
@@ -32,16 +31,25 @@ const About = () => {
     },
   ];
 
-  const slides = [
-    "https://via.placeholder.com/300x400",
-    "https://via.placeholder.com/300x400?text=Slide+2",
-    "https://via.placeholder.com/300x400?text=Slide+3",
-  ];
-
   return (
-    <section className="w-full h-auto pt-20 ">
+    <section className="w-full h-auto pt-20 relative">
       <Carousel />
-
+      <>
+        <StarIcon
+          top="45%"
+          left="30%"
+          className="hidden sm:block"
+          width={40}
+          height={40}
+        />
+        <StarIcon
+          bottom="50%"
+          right="10%"
+          className="hidden sm:block"
+          width={40}
+          height={40}
+        />
+      </>
       <p className="text-center font-urbanist text-[23px] font-semibold leading-[118%] tracking-[3.45px] uppercase pt-[80px] text-accent2">
         what we do
       </p>
