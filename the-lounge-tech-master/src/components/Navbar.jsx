@@ -35,7 +35,7 @@ const Navbar = () => {
         </nav>
 
         {/* Navbar for Mobile and Small Devices */}
-        <nav className="lg:hidden block md:px-10 px-4 mx-auto md:max-w-4xl w-full py-4 border border-slate-300 rounded-xl my-4 bg-secondary/80 text-white backdrop-blur-sm">
+        <nav className="lg:hidden block md:px-10 px-4 mx-auto md:max-w-4xl w-[98%] py-4 border border-slate-300 rounded-xl my-4 bg-secondary/80 text-white backdrop-blur-sm">
           <ul className="flex justify-between items-center text-[14px] capitalize">
             {/* Logo */}
             <li>

@@ -71,7 +71,7 @@ const Testimonials = () => {
             width={40}
             height={40}
             alt="x-leftArrow"
-            className="inline-block w-auto h-auto rounded-full py-2 px-2 border-2 border-accent"
+            className="inline-block md:w-auto md:h-auto w-10  rounded-full py-2 px-2 border-2 border-accent"
           />
         </button>
 
@@ -103,7 +103,7 @@ const Testimonials = () => {
             width={40}
             height={40}
             alt="x-rightArrow"
-            className="inline-block w-auto h-auto rounded-full py-2 px-2 border-2 border-accent"
+            className="inline-block md:w-auto md:h-auto w-10 rounded-full py-2 px-2 border-2 border-accent"
           />
         </button>
       </div>

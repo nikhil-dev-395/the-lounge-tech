@@ -57,11 +57,11 @@ const Services = () => {
         Our Projects
       </h1>
 
-      <div className="pt-8 w-full sm:w-[80%] mx-auto flex items-center justify-between">
-        <p className="text-2xl sm:text-3xl md:text-4xl font-semibold capitalize">
+      <div className="pt-8 w-full sm:w-[80%] mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p className="text-2xl sm:text-3xl md:text-4xl w-full sm:w-auto font-semibold capitalize text-center sm:text-left">
           The work we have done
         </p>
-        <div className="w-full sm:w-[40%] lg:w-[20%] mt-4 sm:mt-0">
+        <div className="w-full sm:w-auto flex justify-center sm:justify-end pt-5 sm:pt-0">
           <Button />
         </div>
       </div>

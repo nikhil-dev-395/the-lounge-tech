@@ -36,37 +36,40 @@ const Carousel = () => {
             start ? "animate-scroll" : ""
           }`}
         >
-          <li className="flex ">
+          <li className="flex">
             <Image
               src="/Logos/cloudWatch.svg"
               alt="Logo"
               width={240}
               height={100}
-              className=""
+              className="w-[30vw] max-w-[200px] sm:w-[20vw] md:w-[10vw] h-auto"
             />
           </li>
-          <li className="flex ">
+          <li className="flex">
             <Image
               src="/Logos/sysiphus.svg"
               alt="Logo"
               width={240}
               height={100}
+              className="w-[30vw] max-w-[200px] sm:w-[20vw] md:w-[10vw] h-auto"
             />
           </li>
-          <li className="flex ">
+          <li className="flex">
             <Image
               src="/Logos/hourglass.svg"
               alt="Logo"
               width={240}
               height={100}
+              className="w-[30vw] max-w-[200px] sm:w-[20vw] md:w-[10vw] h-auto"
             />
           </li>
-          <li className="flex ">
+          <li className="flex">
             <Image
               src="/Logos/Layers.svg"
               alt="Logo"
               width={240}
               height={100}
+              className="w-[30vw] max-w-[200px] sm:w-[20vw] md:w-[10vw] h-auto"
             />
           </li>
         </ul>
