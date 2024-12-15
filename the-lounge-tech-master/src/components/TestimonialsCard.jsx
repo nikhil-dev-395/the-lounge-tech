@@ -27,7 +27,7 @@ const TestimonialsCard = ({
             height={20}
             alt="client"
           />
-          <div className="flex pt-2 w-[320px] items-center">
+          <div className="flex pt-2 w-[80%] items-center">
             <h3 className="w-full md:text-sm text-xs">{clientName}</h3>{" "}
             <span>-</span>
             <p className="md:text-sm text-xs font-thin w-full pl-2">

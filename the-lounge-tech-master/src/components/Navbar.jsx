@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Button from "./Button";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,11 +23,21 @@ const Navbar = () => {
               <Image src="/Icons/Logo.svg" alt="Logo" width={140} height={10} />
             </li>
             {/* Navigation Links */}
-            <li>home</li>
-            <li>about us</li>
-            <li>services</li>
-            <li>pages</li>
-            <li>contact</li>
+            <li className="hover:text-blue-400 transition-all duration-300">
+              <Link href="/">home</Link>
+            </li>
+            <li className="hover:text-blue-400 transition-all duration-300">
+              <Link href="/about-us">about us</Link>
+            </li>
+            <li className="hover:text-blue-400 transition-all duration-300">
+              <Link href="/services">services</Link>
+            </li>
+            <li className="hover:text-blue-400 transition-all duration-300">
+              <Link href="/pages">pages</Link>
+            </li>
+            <li className="hover:text-blue-400 transition-all duration-300">
+              <Link href="/contact">contact</Link>
+            </li>
             {/* Button */}
             <li>
               <Button name="lets talking" ImageSrc="/Icons/rightArrow.svg" />
@@ -59,12 +70,25 @@ const Navbar = () => {
           </ul>
           {/* Dropdown Menu */}
           {isMenuOpen && (
-            <ul className=" text-xl capitalize flex flex-col gap-4 mt-4 bg-secondary/90 p-4 rounded-xl shadow-md">
-              <li className="text-center">home</li>
-              <li className="text-center">about us</li>
-              <li className="text-center">services</li>
-              <li className="text-center">pages</li>
-              <li className="text-center">contact</li>
+            <ul
+              className="text-xl capitalize flex flex-col gap-4 mt-4 bg-secondary/90 p-4 rounded-xl shadow-md transition-transform duration-500 ease-in-out transform origin-top scale-y-100"
+              style={{ transform: isMenuOpen ? "scaleY(1)" : "scaleY(0)" }}
+            >
+              <li className="text-center hover:text-blue-400 transition-all duration-300">
+                <Link href="/">home</Link>
+              </li>
+              <li className="text-center hover:text-blue-400 transition-all duration-300">
+                <Link href="/about-us">about us</Link>
+              </li>
+              <li className="text-center hover:text-blue-400 transition-all duration-300">
+                <Link href="/services">services</Link>
+              </li>
+              <li className="text-center hover:text-blue-400 transition-all duration-300">
+                <Link href="/pages">pages</Link>
+              </li>
+              <li className="text-center hover:text-blue-400 transition-all duration-300">
+                <Link href="/contact">contact</Link>
+              </li>
               <li className="text-center">
                 <Button name="lets talking" ImageSrc="/Icons/rightArrow.svg" />
               </li>

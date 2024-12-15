@@ -48,7 +48,7 @@ const Testimonials = () => {
         <h3 className="text-testimonialsHead text-[23px] font-urbanist font-thin uppercase text-center">
           Testimonials
         </h3>
-        <h1 className="pt-10 text-Headings text-[39px] font-urbanist font-thin capitalize text-center">
+        <h1 className="pt-10 text-Headings text-3xl md:text-[39px] font-urbanist font-semibold capitalize text-center">
           This is what others have to say
         </h1>
         <p className="pt-4 text-slate-500 text-md font-urbanist capitalize text-center">

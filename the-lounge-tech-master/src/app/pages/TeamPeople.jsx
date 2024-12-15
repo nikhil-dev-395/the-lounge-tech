@@ -35,11 +35,11 @@ const TeamPeople = () => {
 
   return (
     <section className="w-full h-auto max-w-[90%] mx-auto">
-      <h1 className="text-xl font-thin uppercase font-urbanist">
+      <h1 className="md:text-xl  font-thin uppercase font-urbanist">
         Our Dedicated Team
       </h1>
       <div className="flex justify-between gap-10 md:pt-10 pt-4 flex-col md:flex-row">
-        <p className="text-[40px] sm:text-[40px] font-semibold capitalize">
+        <p className="text-3xl sm:text-[40px] font-semibold capitalize">
           Meet Our People
         </p>
         <div className="btn flex gap-10">
